@@ -29,5 +29,6 @@ public class PlayerWalk : MonoBehaviour
             rb.AddForce(move, ForceMode.VelocityChange);
         }
 
+
     }
 }
