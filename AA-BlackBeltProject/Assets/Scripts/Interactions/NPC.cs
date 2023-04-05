@@ -3,18 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NPC : MonoBehaviour, iInteractable
+public class NPC : MonoBehaviour
 {
     public Vector3[] npcPos;
     NavMeshAgent myNavMeshAgent;
     int index;
-
-   
-
-    public void interact()
-    {
-       // NPC stuff;
-    }
+    public float changeDis;
 
     void Start()
     {
@@ -25,7 +19,7 @@ public class NPC : MonoBehaviour, iInteractable
 
     void Update()
     {
-        if(myNavMeshAgent.remainingDistance < 2)
+        if(myNavMeshAgent.remainingDistance < changeDis)
         {
             index = Random.Range(0, npcPos.Length);
             myNavMeshAgent.SetDestination(npcPos[index]);

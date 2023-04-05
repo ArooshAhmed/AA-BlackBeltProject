@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Object : MonoBehaviour, iInteractable
 {
- 
+    
 
     public void interact()
     {
-       //objevt stuff;
+        Debug.Log("Pick Up");
+        //Inventory.inventory
+        //objevt stuff;
     }
 
     // Start is called before the first frame update

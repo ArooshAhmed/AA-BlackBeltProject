@@ -10,7 +10,7 @@ public class PlayerInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, Camera.main.transform.forward, out hit, InteractingDis))
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, InteractingDis))
             {
                 if(hit.collider.gameObject.GetComponent<iInteractable>() != null)
                 {
