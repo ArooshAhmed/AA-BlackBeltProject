@@ -6,6 +6,7 @@ public class Inventory : MonoBehaviour
 {
     static public Inventory inventory;
     public GameObject[] slots;
+    public GameObject heldItem;
 
     void Start()
     {
