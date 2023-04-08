@@ -5,8 +5,8 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     static public Inventory inventory;
-    public GameObject[] slots;
-    public GameObject heldItem;
+    //public GameObject[] slots;
+    List<GameObject> slots = new List<GameObject>();
 
     void Start()
     {
@@ -16,5 +16,14 @@ public class Inventory : MonoBehaviour
     void Update()
     {
         
+    }
+    public void AddInventory(GameObject item)
+    {
+        slots.Add(item);
+    }
+
+    public void RemoveInventory(GameObject item)
+    {
+        slots.Remove(item);
     }
 }
