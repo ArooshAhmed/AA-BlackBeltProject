@@ -517,6 +517,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1240704333}
     m_Modifications:
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_Name
+      value: Border4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2800999905946161224, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
       propertyPath: m_Name
       value: Slot4
@@ -710,6 +718,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208678285}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &225754428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+  m_PrefabInstance: {fileID: 175335432}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &233287932
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +821,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233287932}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &254390527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+  m_PrefabInstance: {fileID: 1588665129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &280424930 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2800999905946161227, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
@@ -918,6 +936,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1240704333}
     m_Modifications:
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_Name
+      value: Border5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2800999905946161224, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
       propertyPath: m_Name
       value: Slot5
@@ -2228,6 +2254,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &960463507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+  m_PrefabInstance: {fileID: 1605946412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,6 +3016,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1165284456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+  m_PrefabInstance: {fileID: 327753985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201654340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,6 +3456,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1240704333}
     m_Modifications:
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_Name
+      value: Border2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2800999905946161224, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
       propertyPath: m_Name
       value: Slot2
@@ -3522,6 +3566,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1240704333}
     m_Modifications:
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_Name
+      value: Border3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2800999905946161224, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
       propertyPath: m_Name
       value: Slot3
@@ -4225,6 +4277,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slots: []
+  b1: {fileID: 1907265563}
+  b2: {fileID: 254390527}
+  b3: {fileID: 960463507}
+  b4: {fileID: 225754428}
+  b5: {fileID: 1165284456}
 --- !u!114 &1838153113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4307,6 +4364,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1907265563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+  m_PrefabInstance: {fileID: 2800999905670472105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1911299941
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,6 +4670,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1240704333}
     m_Modifications:
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_Name
+      value: Border1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2800999905946161224, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
       propertyPath: m_Name
       value: Slot1
