@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     static public Inventory inventory;
     //public GameObject[] slots;
     public List<GameObject> slots = new List<GameObject>();
+    public List<Image> InventoryImages = new List<Image>();
     int slotNumber;
     public GameObject b1;
     public GameObject b2;
@@ -72,9 +74,12 @@ public class Inventory : MonoBehaviour
             b1.SetActive(false);
         }
     }
-    public void AddInventory(GameObject item)
+    public void AddInventory(GameObject item , Sprite IS)
     {
+
         slots.Add(item);
+        InventoryImages[slots.IndexOf(item)].sprite = IS;
+
     }
 
     public void RemoveInventory(GameObject item)

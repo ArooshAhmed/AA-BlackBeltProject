@@ -5,12 +5,13 @@ using UnityEngine;
 public class Object : MonoBehaviour, iInteractable
 {
     public bool pickedUp;
+    public Sprite ImageSprite;
 
     public void interact()
     {
         if (pickedUp == false)
         {
-            Inventory.inventory.AddInventory(gameObject);
+            Inventory.inventory.AddInventory(gameObject, ImageSprite);
             pickedUp = true;
             gameObject.SetActive(false);
         }
