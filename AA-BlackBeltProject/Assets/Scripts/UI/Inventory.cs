@@ -73,6 +73,11 @@ public class Inventory : MonoBehaviour
             b4.SetActive(false);
             b1.SetActive(false);
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RemoveInventory(slotNumber);
+        }
     }
     public void AddInventory(GameObject item , Sprite IS)
     {
@@ -82,8 +87,19 @@ public class Inventory : MonoBehaviour
 
     }
 
-    public void RemoveInventory(GameObject item)
+    public void RemoveInventory(int item)
     {
-        slots.Remove(item);
+        slots.RemoveAt(item);
+        for (int i = 0; i < InventoryImages.Count; i++)
+        {
+            if (i < slots.Count)
+            {
+                InventoryImages[i].sprite = slots[i].GetComponent<Object>().ImageSprite;
+            }
+            else
+            {
+                InventoryImages[i].sprite = null;
+            }
+        }
     }
 }
