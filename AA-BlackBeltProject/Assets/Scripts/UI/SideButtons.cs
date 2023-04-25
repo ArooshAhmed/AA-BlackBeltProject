@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SideButtons : MonoBehaviour
 {
+    public GameObject Menu;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,9 @@ public class SideButtons : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
+    public void Mouse()
     {
-        Debug.Log("Clicked");
+        Menu.SetActive(true);
+        Debug.Log("IT WORKSSS");
     }
 }
