@@ -12,8 +12,13 @@ public class PlayerCam : MonoBehaviour
     float xRotation;
     float yRotation;
 
+    private bool canMove;
+
+    private float mouseX;
+    private float mouseY;
     private void Start()
     {
+        canMove = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -24,16 +29,28 @@ public class PlayerCam : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            canMove = false;
         }
         else if(Input.GetKeyDown(KeyCode.Q))
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            canMove = true;
         }
 
-        // get mouse input
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
+
+
+        if (canMove)
+        {
+            // get mouse input
+            mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
+            mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
+        }
+        else
+        {
+            mouseX = 0;
+            mouseY = 0;
+        }
 
         //look left and right
         yRotation += mouseX;

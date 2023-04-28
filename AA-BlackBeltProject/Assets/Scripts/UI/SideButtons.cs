@@ -20,6 +20,6 @@ public class SideButtons : MonoBehaviour
     public void Mouse()
     {
         Menu.SetActive(true);
-        Debug.Log("IT WORKSSS");
+        Time.timeScale = 0;
     }
 }

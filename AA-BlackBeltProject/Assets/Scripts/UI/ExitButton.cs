@@ -9,5 +9,6 @@ public class ExitButton : MonoBehaviour
     public void HideScreen()
     {
         Screen.SetActive(false);
+        Time.timeScale = 1;
     }
 }
