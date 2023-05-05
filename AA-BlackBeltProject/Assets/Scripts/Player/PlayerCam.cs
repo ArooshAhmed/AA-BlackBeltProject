@@ -12,7 +12,7 @@ public class PlayerCam : MonoBehaviour
     float xRotation;
     float yRotation;
 
-    private bool canMove;
+    public static bool canMove;
 
     private float mouseX;
     private float mouseY;

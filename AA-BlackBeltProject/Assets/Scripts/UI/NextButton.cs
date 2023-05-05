@@ -6,6 +6,6 @@ public class NextButton : MonoBehaviour
 {
     public void Next()
     {
-
+        PlayerInteract.PersonTalking.GetComponent<Talking>().interact();
     }
 }

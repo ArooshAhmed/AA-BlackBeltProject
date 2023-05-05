@@ -11,16 +11,26 @@ public class Talking : NPC, iInteractable
     public static GameObject dialogueText;
     public void interact()
     {
+        PlayerCam.canMove = false;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         dialogueBox.SetActive(true);
-        dialogueText.GetComponent<TextMeshProUGUI>().text = Dialogue[DialogueNumber];
-        DialogueNumber += 1;
-        if (DialogueNumber == Dialogue.Count) 
+
+        if (DialogueNumber == Dialogue.Count)
         {
             dialogueBox.SetActive(false);
         }
-      
+        dialogueText.GetComponent<TextMeshProUGUI>().text = Dialogue[DialogueNumber];
+
+        DialogueNumber += 1;
         //show a dialogue
         //There are arrows to move on to the next dialogue
+    }
+
+    public void Give(Object thingtogive)
+    {
+
+        //stuff
     }
     // Start is called before the first frame update
     void Start()
