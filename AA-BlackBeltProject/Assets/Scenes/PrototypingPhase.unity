@@ -6634,9 +6634,16 @@ MonoBehaviour:
   npcPos:
   - {x: -27.67, y: 0.095, z: 44.43}
   changeDis: 0
+  mode: 0
   Dialogue:
   - Hi im blue lol
   - K bye
+  correctDialogue:
+  - Oh! You Found it!
+  - Thanks!
+  incorrectDialogue:
+  - What is wrong with you.
+  - Its the wrong thing.
   DialogueNumber: 0
 --- !u!1 &1713519732
 GameObject:
@@ -7208,6 +7215,7 @@ MonoBehaviour:
   - {fileID: 1429314246}
   - {fileID: 8034346}
   - {fileID: 417348639}
+  slotNumber: 0
   b1: {fileID: 1907265563}
   b2: {fileID: 254390527}
   b3: {fileID: 960463507}

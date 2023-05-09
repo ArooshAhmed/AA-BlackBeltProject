@@ -36,7 +36,7 @@ public class PlayerInteract : MonoBehaviour
                     if (hit.collider.gameObject.GetComponent<Talking>() != null)
                     {
                         PersonTalking = hit.collider.gameObject;
-                        //hit.collider.gameObject.GetComponent<Talking>().Give();
+                        hit.collider.gameObject.GetComponent<Talking>().Give(Inventory.inventory.slots[Inventory.inventory.slotNumber].GetComponent<Object>());
                     }
                 }
             }

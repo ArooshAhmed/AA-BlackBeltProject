@@ -6,7 +6,13 @@ using TMPro;
 public class Talking : NPC, iInteractable
 {
     public static GameObject dialogueBox;
+
+    public enum DialogueMode {Normal, Incorrect, Correct }
+    public DialogueMode mode;
     public List<string> Dialogue = new List<string>();
+    public List<string> correctDialogue = new List<string>();
+    public List<string> incorrectDialogue = new List<string>();
+
     public int DialogueNumber;
     public static GameObject dialogueText;
     public void interact()
@@ -16,20 +22,42 @@ public class Talking : NPC, iInteractable
         Cursor.visible = true;
         dialogueBox.SetActive(true);
 
-        if (DialogueNumber == Dialogue.Count)
+        if (mode == DialogueMode.Normal)
         {
-            dialogueBox.SetActive(false);
-        }
-        dialogueText.GetComponent<TextMeshProUGUI>().text = Dialogue[DialogueNumber];
+            if (DialogueNumber == Dialogue.Count)
+            {
+                dialogueBox.SetActive(false);
+            }
+            dialogueText.GetComponent<TextMeshProUGUI>().text = Dialogue[DialogueNumber];
 
-        DialogueNumber += 1;
+            DialogueNumber += 1;
+        }
+
+        if (mode == DialogueMode.Correct)
+        {
+            dialogueText.GetComponent<TextMeshProUGUI>().text = correctDialogue[DialogueNumber];
+            DialogueNumber += 1;
+        }
+
+        if (mode == DialogueMode.Incorrect)
+        {
+            dialogueText.GetComponent<TextMeshProUGUI>().text = incorrectDialogue[DialogueNumber];
+            DialogueNumber += 1;
+        }
         //show a dialogue
         //There are arrows to move on to the next dialogue
     }
 
     public void Give(Object thingtogive)
     {
+        dialogueBox.SetActive(true);
 
+
+        //if correct
+        mode = DialogueMode.Correct;
+        dialogueText.GetComponent<TextMeshProUGUI>().text = correctDialogue[0];
+        
+       // mode = DialogueMode.Incorrect;
         //stuff
     }
     // Start is called before the first frame update

@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     //public GameObject[] slots;
     public List<GameObject> slots = new List<GameObject>();
     public List<Image> InventoryImages = new List<Image>();
-    int slotNumber;
+    public int slotNumber;
     public GameObject b1;
     public GameObject b2;
     public GameObject b3;
