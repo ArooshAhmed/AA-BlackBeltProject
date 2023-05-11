@@ -89,7 +89,11 @@ public class Inventory : MonoBehaviour
 
     public void RemoveInventory(int item)
     {
-        slots.RemoveAt(item);
+        if (slots[item] != null) // need to fix verification - Dhevan
+        {
+            slots.RemoveAt(item);
+        }
+
         for (int i = 0; i < InventoryImages.Count; i++)
         {
             if (i < slots.Count)

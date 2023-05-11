@@ -23,7 +23,6 @@ public class NPC : MonoBehaviour
         {
             index = Random.Range(0, npcPos.Length);
             myNavMeshAgent.SetDestination(npcPos[index]);
-        } 
-        
+        }
     }
 }
