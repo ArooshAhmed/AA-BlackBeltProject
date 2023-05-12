@@ -882,6 +882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickedUp: 0
   ImageSprite: {fileID: 21300000, guid: ecab12631e4c7044c8c6a60e856e6e07, type: 3}
+  WhatWanted: Cylinder
 --- !u!1 &225754428 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2800999904410974559, guid: 03b03d060d35b8f46a7a56a820dc5b52, type: 3}
@@ -1606,6 +1607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickedUp: 0
   ImageSprite: {fileID: 21300000, guid: 058fb0a8f4a90bb44b2987a8f0182816, type: 3}
+  WhatWanted: Sphere
 --- !u!1 &391016473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6644,6 +6646,7 @@ MonoBehaviour:
   incorrectDialogue:
   - What is wrong with you.
   - Its the wrong thing.
+  WhatNeeded: Cube
   DialogueNumber: 0
 --- !u!1 &1713519732
 GameObject:
@@ -8379,6 +8382,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2240823234535890632, guid: baade4e027227d04583afa9a64f94c07, type: 3}
       propertyPath: m_Name
+      value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240823234535890633, guid: baade4e027227d04583afa9a64f94c07, type: 3}
+      propertyPath: WhatWanted
       value: Cube
       objectReference: {fileID: 0}
     - target: {fileID: 2240823234535890633, guid: baade4e027227d04583afa9a64f94c07, type: 3}

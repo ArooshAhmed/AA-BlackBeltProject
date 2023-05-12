@@ -6,7 +6,7 @@ public class Object : MonoBehaviour, iInteractable
 {
     public bool pickedUp;
     public Sprite ImageSprite;
-
+    public string WhatWanted;
     public void interact()
     {
         if (pickedUp == false)

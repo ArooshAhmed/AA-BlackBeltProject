@@ -81,10 +81,8 @@ public class Inventory : MonoBehaviour
     }
     public void AddInventory(GameObject item , Sprite IS)
     {
-
         slots.Add(item);
         InventoryImages[slots.IndexOf(item)].sprite = IS;
-
     }
 
     public void RemoveInventory(int item)
@@ -92,6 +90,10 @@ public class Inventory : MonoBehaviour
         if (slots[item] != null) // need to fix verification - Dhevan
         {
             slots.RemoveAt(item);
+        }
+        else
+        {
+            return;
         }
 
         for (int i = 0; i < InventoryImages.Count; i++)
