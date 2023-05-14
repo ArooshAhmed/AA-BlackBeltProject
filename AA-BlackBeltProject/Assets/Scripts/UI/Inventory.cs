@@ -10,12 +10,14 @@ public class Inventory : MonoBehaviour
     public List<GameObject> slots = new List<GameObject>();
     public List<Image> InventoryImages = new List<Image>();
     public int slotNumber;
+
     public GameObject b1;
     public GameObject b2;
     public GameObject b3;
     public GameObject b4;
     public GameObject b5;
 
+    public GameObject PlayerHolder;
     void Start()
     {
         inventory = this;
@@ -87,13 +89,16 @@ public class Inventory : MonoBehaviour
 
     public void RemoveInventory(int item)
     {
-        if (slots[item] != null) // need to fix verification - Dhevan
+        //Debug.Log(slots.Count + " item num: " + item);
+        if (slots.Count <= item) // need to fix verification - Dhevan
         {
-            slots.RemoveAt(item);
+            return;
         }
         else
         {
-            return;
+            GameObject ClonedItem = Instantiate(slots[item], PlayerHolder.transform.position, Quaternion.identity);
+            ClonedItem.SetActive(true);
+            slots.RemoveAt(item);
         }
 
         for (int i = 0; i < InventoryImages.Count; i++)

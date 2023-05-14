@@ -7135,7 +7135,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 918528815}
   m_HandleRect: {fileID: 918528814}
   m_Direction: 2
-  m_Value: 0.9999999
+  m_Value: 1
   m_Size: 0.3888021
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7224,6 +7224,7 @@ MonoBehaviour:
   b3: {fileID: 960463507}
   b4: {fileID: 225754428}
   b5: {fileID: 1165284456}
+  PlayerHolder: {fileID: 1376040288}
 --- !u!114 &1838153113
 MonoBehaviour:
   m_ObjectHideFlags: 0
