@@ -78,7 +78,7 @@ public class Inventory : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            RemoveInventory(slotNumber);
+            RemoveInventory(slotNumber, true);
         }
     }
     public void AddInventory(GameObject item , Sprite IS)
@@ -87,7 +87,7 @@ public class Inventory : MonoBehaviour
         InventoryImages[slots.IndexOf(item)].sprite = IS;
     }
 
-    public void RemoveInventory(int item)
+    public void RemoveInventory(int item , bool drop)
     {
         //Debug.Log(slots.Count + " item num: " + item);
         if (slots.Count <= item) // need to fix verification - Dhevan
@@ -96,8 +96,13 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-            GameObject ClonedItem = Instantiate(slots[item], PlayerHolder.transform.position, Quaternion.identity);
+            if (drop == true)
+            {
+            GameObject ClonedItem = Instantiate(slots[item], -PlayerHolder.transform.forward + PlayerHolder.transform.position, Quaternion.identity);
             ClonedItem.SetActive(true);
+            ClonedItem.GetComponent<Object>().pickedUp = false;
+            }
+
             slots.RemoveAt(item);
         }
 

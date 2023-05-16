@@ -16,12 +16,14 @@ public class Talking : NPC, iInteractable
     public string WhatNeeded;
     public int DialogueNumber;
     public static GameObject dialogueText;
+    public GameObject PersonText;
     public void interact()
     {
         PlayerCam.canMove = false;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         dialogueBox.SetActive(true);
+        PersonText.SetActive(false);
 
         if (mode == DialogueMode.Normal)
         {
@@ -75,13 +77,14 @@ public class Talking : NPC, iInteractable
         {
             mode = DialogueMode.Correct;
             dialogueText.GetComponent<TextMeshProUGUI>().text = correctDialogue[0];
-            Inventory.inventory.RemoveInventory(Inventory.inventory.slotNumber);
+            Inventory.inventory.RemoveInventory(Inventory.inventory.slotNumber, false);
             DialogueNumber = 1;
         }
         else
         {
             mode = DialogueMode.Incorrect;
             dialogueText.GetComponent<TextMeshProUGUI>().text = incorrectDialogue[0];
+            DialogueNumber = 1;
         }
     }
     // Start is called before the first frame update
