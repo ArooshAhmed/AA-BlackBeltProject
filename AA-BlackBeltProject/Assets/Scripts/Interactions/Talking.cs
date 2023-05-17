@@ -30,6 +30,7 @@ public class Talking : NPC, iInteractable
             if (DialogueNumber >= Dialogue.Count)
             {
                 dialogueBox.SetActive(false);
+                DialogueNumber = 0;
             }
             else
             {
@@ -44,6 +45,7 @@ public class Talking : NPC, iInteractable
             if (DialogueNumber >= correctDialogue.Count)
             {
                 dialogueBox.SetActive(false);
+                DialogueNumber = 0;
             }
             else
             {
@@ -57,6 +59,7 @@ public class Talking : NPC, iInteractable
             if (DialogueNumber >= incorrectDialogue.Count)
             {
                 dialogueBox.SetActive(false);
+                DialogueNumber = 0;
             }
             else
             {

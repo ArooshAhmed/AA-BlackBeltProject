@@ -2455,8 +2455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: -7}
-  m_SizeDelta: {x: 548.2662, y: 369.8859}
+  m_AnchoredPosition: {x: 13, y: -5.8586}
+  m_SizeDelta: {x: 548.2662, y: 367.6029}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964403737
 MonoBehaviour:
@@ -2870,16 +2870,19 @@ MonoBehaviour:
   m_text: 'Press E to interact and pick up objects.
 
 
-    Press R to give/take out
-    things from you inventory.
+    Press R to take out things
+    from you inventory.
 
 
-    Press ESC to get your mouse out of first person
-    so you can move it.
+    Press ESC to get your mouse out of first person so
+    you can move it.
 
 
-    Press Q to put your mouse back into first person and
-    lock it.'
+    Press Q to put your mouse back into first person and lock
+    it.
+
+
+    Press G to give objects to people'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4441,8 +4444,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.38806152, y: -25.999023}
-  m_SizeDelta: {x: -86.048706, y: -120.78491}
+  m_AnchoredPosition: {x: 0.38806152, y: -48.975586}
+  m_SizeDelta: {x: -86.0487, y: -74.8317}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1650223471
 MonoBehaviour:
@@ -4905,8 +4908,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 918528815}
   m_HandleRect: {fileID: 918528814}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.3888021
+  m_Value: 0.9999999
+  m_Size: 0.38640237
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
