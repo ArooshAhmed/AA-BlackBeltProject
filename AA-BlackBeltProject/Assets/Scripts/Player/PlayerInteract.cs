@@ -12,7 +12,7 @@ public class PlayerInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             RaycastHit hit;
-            if (Physics.SphereCast(Camera.main.transform.position, 2, Camera.main.transform.forward, out hit, InteractingDis))
+            if (Physics.SphereCast(Camera.main.transform.position, 1, Camera.main.transform.forward, out hit, InteractingDis))
             {
                 if(hit.collider.gameObject.GetComponent<iInteractable>() != null)
                 {
@@ -28,7 +28,7 @@ public class PlayerInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             RaycastHit hit;
-            if (Physics.SphereCast(Camera.main.transform.position, 2, Camera.main.transform.forward, out hit, InteractingDis))
+            if (Physics.SphereCast(Camera.main.transform.position, 1, Camera.main.transform.forward, out hit, InteractingDis))
             {
                 if (hit.collider.gameObject.GetComponent<iInteractable>() != null)
                 {
